@@ -2,6 +2,28 @@
 
 Try to use gradle + kotlin as script
 
+# Usage
+
+Create a empty gradle project, use kotlin dsl
+
+```bash
+> cd projectDir
+> git submodule add git@github.com:Wanther/videotools.git buildSrc
+```
+
+project structure:
+  - buildSrc <-- videotools submodule
+  - gradle
+  - gradlew
+  - gradlew.bat
+  - gradle.properties
+  - build.gradle.kts
+  - settings.gradle.kts
+  - project1
+    - build.gradle.kts
+  - project2
+    - build.gradle.kts
+
 # Configuration
 
 add ffmpeg, ffprobe to your PATH environment variable
