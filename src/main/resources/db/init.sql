@@ -1,0 +1,21 @@
+CREATE TABLE `{projectName}_doc` (
+  `id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `path` VARCHAR(1024) COMMENT '文件路径',
+  `format` VARCHAR(16) COMMENT '文件格式',
+  `size` BIGINT(20) UNSIGNED NOT NULL DEFAULT '0' COMMENT '文件大小',
+  `status` TINYINT NOT NULL DEFAULT 0 COMMENT '状态',
+  `short_path` VARCHAR(128) COMMENT 'OSS简路径',
+  `title` VARCHAR(128) COMMENT '标题',
+  `attr0` VARCHAR(32) COMMENT '属性0',
+  `attr1` VARCHAR(32) COMMENT '属性1',
+  `attr2` VARCHAR(32) COMMENT '属性2',
+  `attr3` VARCHAR(32) COMMENT '属性3',
+  `attr4` VARCHAR(128) COMMENT '属性4',
+  `attr5` VARCHAR(128) COMMENT '属性5',
+  `attr6` VARCHAR(128) COMMENT '属性6',
+  `attr7` VARCHAR(128) COMMENT '属性7',
+  `attr8` VARCHAR(255) COMMENT '属性8',
+  `attr9` VARCHAR(255) COMMENT '属性9',
+  `attr10` VARCHAR(255) COMMENT '属性10',
+  PRIMARY KEY (`id`)
+) ENGINE=MYISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
